@@ -8,6 +8,9 @@
 # npm
 node_modules
 
+# Exclude theme.css
+theme.css
+
 # Exclude sourcemaps
 *.map
 
