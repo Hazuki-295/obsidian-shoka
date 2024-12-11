@@ -2,6 +2,47 @@
 
 body {
     --font-text-theme: Mulish, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    /* Blockquotes */
+    --blockquote-border-thickness: 4px;
+    --blockquote-border-color: var(--primary-color);
     /* Bold */
     --bold-color: var(--primary-color);
+    /* Text */
+    --text-highlight-hazuki: #b8860b;
+    --text-highlight-bg-hazuki: #fff4d6;
+}
+
+.markdown-source-view {
+    /* blockquote */
+    .HyperMD-quote {
+        font-size: var(--font-small);
+        margin-left: 4px;
+
+        &::before {
+            transform: translateX(-4px);
+        }
+    }
+
+    .cm-content > .HyperMD-quote {
+        margin-left: 4px !important;
+    }
+
+    /* mark */
+    span.cm-highlight {
+        background-color: var(--text-highlight-bg-hazuki);
+        color: var(--text-highlight-hazuki);
+    }
+}
+
+.markdown-reading-view {
+    blockquote {
+        font-size: var(--font-small);
+        padding: .625rem 1.25rem;
+        border-radius: .1875rem;
+    }
+
+    mark {
+        background-color: var(--text-highlight-bg-hazuki);
+        color: var(--text-highlight-hazuki);
+    }
 }
