@@ -7,9 +7,30 @@ body {
     --blockquote-border-color: var(--primary-color);
     /* Bold */
     --bold-color: var(--primary-color);
+    /* Inline title */
+    --inline-title-color: var(--primary-color);
+    --inline-title-weight: normal;
     /* Text */
     --text-highlight-hazuki: #b8860b;
     --text-highlight-bg-hazuki: #fff4d6;
+}
+
+.inline-title {
+    text-align: center;
+    letter-spacing: unset;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 3em;
+        height: 2px;
+        background-color: var(--primary-color);
+        position: absolute;
+        bottom: -.3em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .markdown-source-view {
