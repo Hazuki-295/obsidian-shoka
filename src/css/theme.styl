@@ -10,6 +10,15 @@ body {
     /* Inline title */
     --inline-title-color: var(--primary-color);
     --inline-title-weight: normal;
+    /* Tables */
+    --table-header-background-hover: var(--grey-2);
+    --table-line-height: var(--line-height-normal);
+    --table-row-background-hover: var(--grey-2);
+    --table-row-alt-background: var(--grey-1);
+    --table-row-alt-background-hover: var(--grey-2);
+    /* Color mappings ------------------------ */
+    /* Backgrounds */
+    --background-modifier-border: var(--grey-3);
     /* Text */
     --text-highlight-hazuki: #b8860b;
     --text-highlight-bg-hazuki: #fff4d6;
@@ -57,6 +66,11 @@ body {
         background-color: var(--text-highlight-bg-hazuki);
         color: var(--text-highlight-hazuki);
     }
+
+    /* table */
+    th {
+        border-bottom-width: 3px;
+    }
 }
 
 .markdown-reading-view {
@@ -69,5 +83,15 @@ body {
     mark {
         background-color: var(--text-highlight-bg-hazuki);
         color: var(--text-highlight-hazuki);
+    }
+
+    /* table */
+    th {
+        padding-bottom: var(--size-4-2);
+        border-bottom-width: 3px;
+
+        &:empty {
+            display: none;
+        }
     }
 }
