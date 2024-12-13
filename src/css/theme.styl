@@ -1,7 +1,8 @@
 @import 'colors';
 
+/* Obsidian theme variables */
+/* ------------------------ */
 body {
-    --font-text-theme: Mulish, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
     /* Blockquotes */
     --blockquote-border-thickness: 4px;
     --blockquote-border-color: var(--primary-color);
@@ -9,7 +10,8 @@ body {
     --bold-color: var(--primary-color);
     /* Inline title */
     --inline-title-color: var(--primary-color);
-    --inline-title-weight: normal;
+    --inline-title-weight: var(--font-semibold);
+    --inline-title-margin-bottom: 1em;
     /* Tables */
     --table-header-background-hover: var(--grey-2);
     --table-line-height: var(--line-height-normal);
@@ -22,6 +24,10 @@ body {
     /* Text */
     --text-highlight-hazuki: #b8860b;
     --text-highlight-bg-hazuki: #fff4d6;
+}
+
+body {
+    --font-text-theme: Mulish, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 .inline-title {
